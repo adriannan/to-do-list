@@ -2,6 +2,7 @@
 $('ul').on('click', 'li', function(){
 	$(this).toggleClass('completed');
 })
+
 // delete Todos
 $('ul').on('click', 'span', function(event){
 	$(this).parent().slideUp(200, function(){
@@ -10,6 +11,7 @@ $('ul').on('click', 'span', function(event){
 	event.stopPropagation();	
 })
 
+// add new todo
 $("input[type='text']").keypress(function(event){
 	if(event.which === 13){
 		// grabbing new todo
