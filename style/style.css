@@ -10,13 +10,41 @@ body, html{
     scroll-behavior: smooth;
 }
 
+.container{
+	border: 1px solid black;
+	max-width: 400px;
+	margin: 30px auto;
+}
 
+h1{
+	font-size: 2em;
+	font-weight: bold;
+	padding: 10px;
+	cursor: default;
 
+}
+.container input{
+	margin: 5px;
+}
+.container, ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
 
+ul li{
+	padding: 5px;
+	cursor: default;
+}
+ul li span{
+	padding: 5px;
+}
 
-
-
-
+.completed{
+	opacity: .5;
+	text-decoration: line-through;
+}
 
 
 
