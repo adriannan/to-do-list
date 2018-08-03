@@ -1,5 +1,5 @@
 // check and uncheck ToDos
-$('ul').on('click', 'li', function(){
+$('ul').on('click', 'p', function(){
 	$(this).toggleClass('completed');
 })
 
@@ -19,6 +19,12 @@ $("input[type='text']").keypress(function(event){
 		// clear input
 		$(this).val('')
 		// add new to the list
-		$('ul').append("<li><span>x</span>" + newTodo + "</li>")
+		$('ul').append("<li><span><i class='fas fa-times-circle'></i></span><p>" + newTodo + "</p></li>")
 	}
+})
+
+// toogle input
+$('#addBtn').click(function(){
+	$(this).toggleClass('add');
+	$("input[type='text']").fadeToggle(150, 'linear');
 })
