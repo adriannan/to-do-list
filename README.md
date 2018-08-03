@@ -1,6 +1,10 @@
 # ToDo List
+<img src="https://github.com/adriannan/todo-list/blob/master/img/screen-todolist.png?raw=true" align="right"
+     title="screenshot" width="300" height="auto">
 
 This is a simple app built as part of the Udemy course 
+
+
 
 #### Funcionality:
 - it’s responsive 
@@ -16,8 +20,8 @@ Created with:
 
 ### What's more
 - RWD
-- NPM 
-	  - `browser-sync`
+- NPM
+	- `browser-sync`
   	- `autoprefixer-cli`
 
 <hr>
