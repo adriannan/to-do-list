@@ -32,8 +32,10 @@ h1{
 	cursor: default;
 	font-weight: 300;
 	text-transform: capitalize;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
     background: linear-gradient(300deg, #ebc2a2 -15%, #e87871 110%);
 }
 
@@ -51,15 +53,28 @@ h1{
 .container input:focus{
 	border: 1px solid #e9af97;
 }
+.container input::-webkit-input-placeholder{
+	opacity: .5;
+}
+.container input:-ms-input-placeholder{
+	opacity: .5;
+}
 .container input::placeholder{
 	opacity: .5;
+}.container input:focus::-webkit-input-placeholder{
+	visibility: hidden;
+}.container input:focus:-ms-input-placeholder{
+	visibility: hidden;
 }.container input:focus::placeholder{
 	visibility: hidden;
 }
 .container, ul, span{
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-pack: center;
+	    justify-content: center;
 }
 
 ul{
@@ -69,8 +84,10 @@ ul{
 ul li{
 	cursor: default;
 	height: 45px;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-ms-flex-align: center;
+	    align-items: center;
 	font-size: 1em;
 }
 
@@ -83,7 +100,8 @@ ul li span{
 	width: 25px;
 	height: 45px;
 	color: rgba(232, 120, 113, .8);
-	align-items: center;
+	-ms-flex-align: center;
+	    align-items: center;
 	opacity: 0;
 }
 ul li .fa-times-circle{
