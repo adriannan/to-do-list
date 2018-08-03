@@ -38,15 +38,14 @@ h1{
 }
 
 .container input{
-	border: 1px solid rgba(0,0,0,.1);
-}
-.container input{
 	margin: 0px;
 	padding-left: 25px; 
 	height: 45px;
 	font-size: 1em;
 	font-weight: 300;
 	color: rgba(0, 0, 0, .9);
+	border: 1px solid rgb(220, 220, 220); /* The Fallback */
+	border: 1px solid rgba(0,0,0,.1);
 }
 .container input:focus{
 	border: 1px solid #e9af97;
