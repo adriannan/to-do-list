@@ -18,8 +18,11 @@ $("input[type='text']").keypress(function(event){
 		var newTodo = $(this).val();
 		// clear input
 		$(this).val('')
-		// add new to the list
-		$('ul').append("<li><span><i class='fas fa-times-circle'></i></span><p>" + newTodo + "</p></li>")
+		// check whether there's any value
+		if(newTodo!==''){
+			// add new to the list
+			$('ul').append("<li><span><i class='fas fa-times-circle'></i></span><p>" + newTodo + "</p></li>")
+		}
 	}
 })
 
