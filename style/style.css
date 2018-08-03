@@ -20,6 +20,7 @@ body, html{
 .container{
 	max-width: 400px;
 	margin: 75px auto;
+	box-shadow: 0px 0px 15px 1px rgb(190, 190, 190);  /* The Fallback */
 	box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, .2);
     background-color: #fff;
 }
@@ -76,11 +77,13 @@ ul li{
 ul li:nth-of-type(2n-1){
 	color: #e87871;
 	/*background-color: rgba(233, 175, 151, .3);*/
+	box-shadow: 0px 0px 1px .2px rgb(160, 160, 160); /* The Fallback */
 	box-shadow: 0px 0px 1px .2px rgba(0, 0, 0, .3);
 }
 ul li span{
 	width: 25px;
 	height: 45px;
+	color: rgb(234, 134, 129); /* The Fallback */
 	color: rgba(232, 120, 113, .8);
 	align-items: center;
 	opacity: 0;
